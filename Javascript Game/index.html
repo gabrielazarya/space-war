@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fly Fighter</title>
+  <style>
+      body {
+          display: flex;
+
+          height: 100vh;
+
+          margin: 0;
+          padding: 0;
+      }
+
+      #wrapper {
+          margin: auto;
+          border-radius: 10px;
+          border: 2px dashed rgba(0, 0, 0, .3);
+          padding: 3px;
+          width: 600px;
+          height: 600px;
+      }
+
+      #wrapper.win {
+          background-color: lime;
+      }
+
+      #wrapper.lose {
+          background-color: tomato;
+      }
+
+      #game {
+          background: url('back.jpg');
+          border-radius: 10px;
+      }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <canvas id="game"></canvas>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
